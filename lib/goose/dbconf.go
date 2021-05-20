@@ -101,10 +101,6 @@ func newDBDriver(name, open string) DBDriver {
 		d.Import = "github.com/ziutek/mymysql/godrv"
 		d.Dialect = &MySqlDialect{}
 
-	case "mysql":
-		d.Import = "github.com/go-sql-driver/mysql"
-		d.Dialect = &MySqlDialect{}
-
 	case "sqlite3":
 		d.Import = "github.com/mattn/go-sqlite3"
 		d.Dialect = &Sqlite3Dialect{}
