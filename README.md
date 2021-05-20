@@ -8,7 +8,7 @@ You can manage your database's evolution by creating incremental SQL or Go scrip
 
 # Install
 
-    $ go get bitbucket.org/liamstask/goose/cmd/goose
+    $ go get github.com/treetopllc/goose/cmd/goose
 
 This will install the `goose` binary to your `$GOPATH/bin` directory.
 
@@ -227,7 +227,7 @@ These instructions assume that you're using [Keith Rarick's Heroku Go buildpack]
 // note: need at least one blank line after build constraint
 package main
 
-import _ "bitbucket.org/liamstask/goose/cmd/goose"
+import _ "github.com/treetopllc/goose/cmd/goose"
 ```
 
 [Set up your Heroku database(s) as usual.](https://devcenter.heroku.com/articles/heroku-postgresql)
