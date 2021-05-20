@@ -18,8 +18,7 @@ func dialectByName(d string) SqlDialect {
 	switch d {
 	case "postgres":
 		return &PostgresDialect{}
-	case "mysql":
-		return &MySqlDialect{}
+
 	case "sqlite3":
 		return &Sqlite3Dialect{}
 	}
