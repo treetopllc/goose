@@ -96,10 +96,6 @@ func newDBDriver(name, open string) DBDriver {
 	case "postgres":
 		d.Import = "github.com/lib/pq"
 		d.Dialect = &PostgresDialect{}
-
-	case "sqlite3":
-		d.Import = "github.com/mattn/go-sqlite3"
-		d.Dialect = &Sqlite3Dialect{}
 	}
 
 	return d
